@@ -17,6 +17,7 @@ if __name__ == "__main__":
         LoggerHelper().info(rs.get("/hello_provider/provider/ID0000000002"))
         rs.set("/hello_provider/provider/ID0000000002", b"123")
         LoggerHelper().info(rs.get("/hello_provider/provider/ID0000000002"))
+        LoggerHelper().info(rs.get_children("/hello_provider/provider"))
     except Exception as e:
         LoggerHelper().error(e)
     finally:

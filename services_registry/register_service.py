@@ -35,6 +35,9 @@ class RegisterCenter(object):
     def get(self, node):
         return self.zk.get(node)
 
+    def get_children(self, node):
+        return self.zk.get_children(node)
+
     def delete(self, node, recursive=True):
         self.zk.delete(node, recursive=recursive)
 
