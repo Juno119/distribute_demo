@@ -11,8 +11,14 @@ class LoggerHelper:
     def __init__(self):
         self.log = self.getlog()
 
+    def debug(self, message):
+        self.log.debug(message)
+
     def info(self, message):
         self.log.info(message)
+
+    def warning(self, message):
+        self.log.warning(message)
 
     def error(self, message):
         self.log.error(message)
